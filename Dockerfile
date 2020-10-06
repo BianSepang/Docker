@@ -182,6 +182,6 @@ RUN wget -N https://chromedriver.storage.googleapis.com/85.0.4183.87/chromedrive
     chmod 0755 /usr/bin/chromedriver
 
 # Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/BianSepang/ProjectBish/master/requirements.txt
+RUN pip3 install -r https://raw.githubusercontent.com/BianSepang/ProjectBish/experimental/requirements.txt
 
 CMD ["bash"]
