@@ -144,7 +144,7 @@ RUN set -ex; \
 		\) -exec rm -rf '{}' +; \
 	rm -f get-pip.py
 
-# Install apt for DCLXVI
+# Install apt for WeebProject
 RUN apt-get -qq update && apt-get -qq install -y \
     apt-utils \
     aria2 \
@@ -182,6 +182,6 @@ RUN wget -N https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedrive
     chmod 0755 /usr/bin/chromedriver
 
 # Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/BianSepang/ProjectBish/experimental/requirements.txt
+RUN pip3 install -r https://raw.githubusercontent.com/BianSepang/WeebProject/staging/requirements.txt
 
 CMD ["bash"]

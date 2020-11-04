@@ -1,9 +1,9 @@
-# Docker for ProjectBish
-Docker for [ProjectBish](https://github.com/BianSepang/ProjectBish)
+# Docker for WeebProject
+Docker for [WeebProject](https://github.com/BianSepang/WeebProject) Userbot
 
 ## How to Use?
 ```
-docker pull biansepang/p-bish:latest
+docker pull biansepang/weebproject:groovy
 ```
 
 ## Build Status
