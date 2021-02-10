@@ -163,6 +163,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
     zip \
     unzip \
     unar \
+    unrar \
     git \
     libpq-dev \
     sudo \
