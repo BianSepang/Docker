@@ -22,11 +22,11 @@ jobs:
         file: ./Dockerfile
         platforms: linux/amd64
         push: true
-        tags: biansepang/weebproject:groovy
+        tags: biansepang/weebproject:buster
         
     - name: send telegram message
       run: |
           function sendTG() {
           curl -s "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendmessage" --data "text=${*}&chat_id=${{ secrets.TELEGRAM_TO }}&parse_mode=Markdown"
           }
-          sendTG "\`I have pushed new images to docker\` %0A [Image are here](https://hub.docker.com/r/biansepang/weebproject/tags)" &> /dev/null
+          sendTG "\`I have pushed new images to docker\` %0A[Image are here](https://hub.docker.com/r/biansepang/weebproject/tags)" &> /dev/null
