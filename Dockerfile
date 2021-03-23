@@ -50,6 +50,16 @@ RUN set -ex \
     && pip3 install -r requirements.txt \
     && rm requirements.txt \
 
+    # Install RAR
+    && mkdir -p /tmp/ \
+    && cd /tmp/ \
+    && wget -O /tmp/rarlinux.tar.gz http://www.rarlab.com/rar/rarlinux-x64-6.0.0.tar.gz \
+    && tar -xzvf rarlinux.tar.gz \
+    && cd rar \
+    && cp -v rar unrar /usr/bin/ \
+    # clean up
+    && rm -rf /tmp/rar* \
+
     # Cleanup
     && apt-get -qq -y purge --auto-remove \
         apt-utils \
