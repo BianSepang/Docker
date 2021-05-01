@@ -5,6 +5,9 @@ on:
       - master
   schedule:
     - cron: '0 23 * * *'
+  workflow_dispatch:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-20.04
