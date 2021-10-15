@@ -13,9 +13,12 @@ RUN set -ex \
         curl \
         ffmpeg \
         figlet \
+        gfortran \
         git \
         gnupg2 \
         jq \
+        liblapack-dev \
+        libopenblas-dev \
         libpq-dev \
         libssl-dev \
         libwebp6 \
