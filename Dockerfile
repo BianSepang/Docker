@@ -25,7 +25,6 @@ RUN set -ex \
         libxml2 \
         megatools \
         neofetch \
-        p7zip-full \
         postgresql \
         pv \
         sudo \
