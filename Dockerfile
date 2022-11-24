@@ -23,6 +23,7 @@ RUN set -ex \
         libssl-dev \
         libwebp6 \
         libxml2 \
+        mame-tools \
         megatools \
         neofetch \
         postgresql \
